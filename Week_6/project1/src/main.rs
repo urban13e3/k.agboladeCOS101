@@ -40,15 +40,15 @@ fn main(){
         io::stdin().read_line(&mut input6).expect("Failed to read input");
         let _state_of_origin :String = input6.trim().parse().expect("Failed to read input");
 
-        //Are you a Class Rep
+
+        // Are you a Class Rep
         println!("Are you A Class Rep? (Type 'Yes' or 'No'):");
         let mut input7 = String::new();
         io::stdin().read_line(&mut input7).expect("Failed to read input");
-        let _are_you_a_class_rep :String = input7.trim().parse().expect("'yes' or 'no'");
+        let _are_you_a_class_rep: String = input7.trim().to_lowercase(); 
 
-
-        //Check Eligibility of Student
-        if _student_level == 100 && _student_cgpa > 4.0 && _are_you_a_class_rep.== "yes"{
+        // Check Eligibility of Student (case-insensitive)
+        if _student_level == 100 && _student_cgpa > 4.0 && _are_you_a_class_rep.eq_ignore_ascii_case("yes") {
             println!("You can vote");
             println!("Name: {}", _student_name);
             println!("Email: {}", _student_email);
