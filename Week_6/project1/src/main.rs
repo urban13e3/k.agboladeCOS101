@@ -62,7 +62,7 @@ fn main(){
         println!("Count: {}", count);
         count +=1;
 
-        if count >=150 {
+        if count >150 {
             break;
         }
     }
