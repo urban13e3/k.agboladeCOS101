@@ -59,7 +59,7 @@ fn main(){
         }
 
 
-        println!("Count: {}", count);
+        println!("Count:  {}", count);
         count +=1;
 
         if count >150 {
