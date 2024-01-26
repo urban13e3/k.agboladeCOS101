@@ -1,0 +1,4 @@
+Company		Leverages(%)		Date		Assets		Liabilities
+
+
+cham		68.0		1974		25000000		8000000
